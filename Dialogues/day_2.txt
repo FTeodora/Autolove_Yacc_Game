@@ -1,0 +1,35 @@
+Car_1_<..........>
+Car_1_<Another day...>
+Car_1_<.... another moral dilemma>
+Car_1_<Should I torture myself with more work by prematurely training my neural network with exams?>
+Car_1_<Or shall I engage in recreative activities that I yearn>
+Car_1_<The weather outside is nice as well>
+Car_1_<Perhaps arbitrary outdoor events shall determine my mood today>
+Car_3_<You leave your house, in search of a verdict for your mood>
+Car_2_%drawSprite:neutral%<Oh....>
+Car_3_<It's...>
+Car_2_%drawSprite:happy%<Hello!>
+Car_3_<Mood verdict: Positive>
+Car_2_%drawSprite:neutral%<Sorry for my reaction, it's just...>
+Car_2_%drawSprite:neutral%<I almost feel like it's the exact hour that when I saw you yesterday...>
+Car_1_<Well, my refreshing schedule is indeed meticulously programmed>
+Car_2_%drawSprite:happy%<Haha, sure>
+Car_2_%drawSprite:happy%<Man, your jokes will never get old>
+Car_2_%drawSprite:neutral%<Even though the others find your way of speaking weird>
+Car_2_%drawSprite:happy%<I think it's kinda cool>
+Car_2_%drawSprite:happy%<It really makes you unique>
+Car_1_<The probability of two individuals having complete identical personalities is alsmost as a complete 0 >
+Car_2_%drawSprite:happy%<See? It's very charming>
+Car_2_%drawSprite:happy%<Makes me wanna hear what your mind can do>
+Car_2_%drawSprite:happy%<So why don't we hang out today as well?>
+Car_3_<You both request entertainment>
+~~input~~
+Car_2_%drawSprite:neutral%<So...>
+Car_2_%drawSprite:neutral%<Tomorrow's the last day huh>
+Car_2_%drawSprite:sad%<Just when I was really enjoying this>
+Car_2_%drawSprite:angry%<.......>
+Car_2_%drawSprite:neutral%<But...>
+Car_2_%drawSprite:neutral%<It's just the end of the vacation>
+Car_2_%drawSprite:neutral%<Not the end of the world>
+Car_2_%drawSprite:happy%<So, we can still hang out tomorrow>
+Car_2_%drawSprite:happy%<See ya!>

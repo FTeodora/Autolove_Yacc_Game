@@ -1,0 +1,10 @@
+Car_2_%drawSprite:neutral%<... cute!>
+Car_2_%drawSprite:happy%<You are surprisingly affectionate and somewhat "romantic">
+Car_2_%drawSprite:neutral%<I never pictured you as this type of person... you seem really cold and emotionless most of the time>
+Car_2_%drawSprite:happy%<Perhaps this can even be the start of something deeper>
+Car_2_%drawSprite:happy%<We should hang out more!>
+Car_2_%drawSprite:happy%<Maybe we can do something tomorrow as well>
+Car_2_%drawSprite:happy%<Good Night!>
+Car_3_<The marvelous entity seems to be retreating to its home>
+Car_3_<And you shall do that as well>
+Car_3_<You have achieved your objectives for today>

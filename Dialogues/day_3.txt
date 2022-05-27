@@ -1,0 +1,40 @@
+Car_1_<Oh man>
+Car_1_<It's already the last day of this vacation>
+Car_1_<Sure hope I didn't forget to do any project for some stupid class that I had>
+Car_1_<............>
+Car_1_<No, nothing left to do...>
+Car_1_<.... but to make the most out of your time>
+Car_3_<You leave your house, determined to enjoy your last day>
+Car_2_%drawSprite:neutral%<Yo.>
+Car_3_<Crush was just waiting for you at your door>
+Car_3_<Probabily just as excited to see you as you are to see them>
+Car_2_%drawSprite:neutral%<So... how's your last day of vacation?>
+Car_1_<Don't really know since it just started...>
+Car_1_<... but a little better now that you're here>
+Car_2_%drawSprite:happy%<Haha, really?>
+Car_2_%drawSprite:happy%<But to be fair, I'm just as happy to see you>
+Car_3_<Knew it!>
+Car_2_%drawSprite:happy%<You really managed to make those days nicer for me>
+Car_2_%drawSprite:neutral%<So, why don't we fully enjoy all the days>
+Car_2_%drawSprite:neutral%<Afterall...>
+Car_2_%drawSprite:sad%<Tomorrow we'll have to go back to overworking and suffering>
+Car_2_%drawSprite:angry%<... after coming back from just as much overworking and suffering promised as free time>
+Car_2_%drawSprite:neutral%<So let's just enjoy ourselves>
+Car_2_%drawSprite:happy%<'Till the last minute!>
+Car_3_<Engage in delight for your final day of freedom>
+~~input~~
+Car_2_%drawSprite:neutral%<Whew, that was an adventure>
+Car_2_%drawSprite:happy%<But a good one at least>
+Car_2_%drawSprite:happy%<You really are fun to hang with>
+Car_2_%drawSprite:happy%<We should definetly start going together to classes tomorrow>
+Car_2_%drawSprite:happy%<How's that?>
+Car_1_<Perfect.>
+Car_2_%drawSprite:happy%<Good, see you tomorrow then!>
+Car_3_<Crush seems pretty delighted>
+Car_3_<Your mission here has been a glorious success>
+Car_3_<Now......>
+Car_3_<Let the warm light of the dawn paint this beautiful moment...>
+Car_3_<Along with...>
+Car_3_<T H E   C O L D   L I G H T   O F   A   S P E E D I N G   C A R...>
+Car_3_<Goodbye, %getVar_0_%...>
+Car_1_<??? what???>

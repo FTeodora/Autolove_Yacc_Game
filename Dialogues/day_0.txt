@@ -1,0 +1,38 @@
+Car_3_<Ah... There's nothing more satisfying than a long sleep after doing all your college work>
+Car_3_<The weight of a hundred weights, lifted from your shoulders by no other than yourself>
+Car_3_<So satisfying...>
+Car_3_<Wouldn't you agree, my exhausted friend?>
+Car_1_<...?>
+Car_3_<Oh my, quite a shy one, aren't you?>
+Car_1_<...>
+Car_3_<Did you lose your ability to speak in this cruel war?>
+Car_1_<...>
+Car_3_<Oh, my bad, I forgot to actually give you the option to speak>
+Car_3_<Here, try telling me your name (between 3 and 254 characters), then press enter to confirm your choice>
+~~setVar_0_~~
+Car_3_<... %getVar_0_%?>
+Car_3_<... a nice name indeed>
+Car_3_<...%getVar_0_%... the name of a warrior, who endured sleepless nights and hydras of work...>
+Car_3_<Now, brave %getVar_0_%>
+Car_3_<Even though you have indeed survived monstrous amounts of work it wasn't without great sacrifice>
+Car_3_<You might not know this, but time is the most valuable currency in this world>
+Car_3_<It runs away from everyone, before you can even notice>
+Car_3_<Just like your vacation in fact>
+Car_3_<The claws of work raked away what could've been 2 wonderful weeks into just 3 days>
+Car_1_<............>
+Car_3_<But worry not, not all is lost>
+Car_3_<Three days is more than enough to GO places, participate in ACTIVITIES and even meet people you can TALK with>
+Car_3_<All those wonderful things, you can do them as long as your heart desires... >
+Car_3_<... or for as long as you have enough time and energy for them... >
+Car_3_<... Here, why don't you try speaking again. Only this time, try doing something... >
+Car_3_<If you are in doubt about what you can do, just ask ”what options” when given the choice to speak>
+Car_3_<You may ask as many questions as you'd like, as long as you have the time and energy for it>
+Car_3_<When you run out of either one of there two ...>
+Car_3_<... well...>
+Car_3_<...you'll have to call it a day>
+Car_3_<Now try it for yourself. Tell me what you'd like to do or ask me anything>
+~~input~~
+Car_3_<Good, I hope you got the gist of it>
+Car_3_<Don't forget, just type what options when you don't know what to do>
+Car_3_<Now, %getVar_0_%, I believe it's time for you to start your adventure>
+Car_3_<Don't forget, make the most of it!>

@@ -1,0 +1,454 @@
+Grammar
+
+    0 $accept: file $end
+
+    1 file: statement
+    2     | file statement
+
+    3 statement: speak
+    4          | specialCommand
+    5          | togglePrint
+
+    6 speak: spokesman '<' spokenText '>'
+
+    7 specialCommand: MARK_INPUT processInput MARK_INPUT
+
+    8 processInput: VAR_SET INDEX
+    9             | TEXT_INPUT
+   10             | VAR_SET INDEX ':' dialogueText
+   11             | VARI_SET INDEX ':' INDEX
+
+   12 spokesman: speaking
+   13          | speaking sprite
+
+   14 sprite: '%' EMOTION ':' spokenText '%'
+
+   15 togglePrint: MAX_STAT
+
+   16 speaking: SPEAKER INDEX
+
+   17 spokenText: dialogueText
+   18           | spokenText dialogueText
+
+   19 dialogueText: TEXT
+   20             | processVariable
+
+   21 processVariable: '%' VAR_VALUE INDEX '%'
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    '%' (37) 14 21
+    ':' (58) 10 11 14
+    '<' (60) 6
+    '>' (62) 6
+    error (256)
+    EMOTION <value> (258) 14
+    TEXT <s> (259) 19
+    INDEX <nr> (260) 8 10 11 16 21
+    SPEAKER (261) 16
+    VAR_VALUE (262) 21
+    TEXT_INPUT (263) 9
+    VAR_SET (264) 8 10
+    MARK_INPUT (265) 7
+    VARI_SET (266) 11
+    MAX_STAT (267) 15
+
+
+Nonterminals, with rules where they appear
+
+    $accept (17)
+        on left: 0
+    file (18)
+        on left: 1 2
+        on right: 0 2
+    statement (19)
+        on left: 3 4 5
+        on right: 1 2
+    speak (20)
+        on left: 6
+        on right: 3
+    specialCommand (21)
+        on left: 7
+        on right: 4
+    processInput (22)
+        on left: 8 9 10 11
+        on right: 7
+    spokesman (23)
+        on left: 12 13
+        on right: 6
+    sprite (24)
+        on left: 14
+        on right: 13
+    togglePrint (25)
+        on left: 15
+        on right: 5
+    speaking (26)
+        on left: 16
+        on right: 12 13
+    spokenText <s> (27)
+        on left: 17 18
+        on right: 6 14 18
+    dialogueText <s> (28)
+        on left: 19 20
+        on right: 10 17 18
+    processVariable <s> (29)
+        on left: 21
+        on right: 20
+
+
+State 0
+
+    0 $accept: . file $end
+
+    SPEAKER     shift, and go to state 1
+    MARK_INPUT  shift, and go to state 2
+    MAX_STAT    shift, and go to state 3
+
+    file            go to state 4
+    statement       go to state 5
+    speak           go to state 6
+    specialCommand  go to state 7
+    spokesman       go to state 8
+    togglePrint     go to state 9
+    speaking        go to state 10
+
+
+State 1
+
+   16 speaking: SPEAKER . INDEX
+
+    INDEX  shift, and go to state 11
+
+
+State 2
+
+    7 specialCommand: MARK_INPUT . processInput MARK_INPUT
+
+    TEXT_INPUT  shift, and go to state 12
+    VAR_SET     shift, and go to state 13
+    VARI_SET    shift, and go to state 14
+
+    processInput  go to state 15
+
+
+State 3
+
+   15 togglePrint: MAX_STAT .
+
+    $default  reduce using rule 15 (togglePrint)
+
+
+State 4
+
+    0 $accept: file . $end
+    2 file: file . statement
+
+    $end        shift, and go to state 16
+    SPEAKER     shift, and go to state 1
+    MARK_INPUT  shift, and go to state 2
+    MAX_STAT    shift, and go to state 3
+
+    statement       go to state 17
+    speak           go to state 6
+    specialCommand  go to state 7
+    spokesman       go to state 8
+    togglePrint     go to state 9
+    speaking        go to state 10
+
+
+State 5
+
+    1 file: statement .
+
+    $default  reduce using rule 1 (file)
+
+
+State 6
+
+    3 statement: speak .
+
+    $default  reduce using rule 3 (statement)
+
+
+State 7
+
+    4 statement: specialCommand .
+
+    $default  reduce using rule 4 (statement)
+
+
+State 8
+
+    6 speak: spokesman . '<' spokenText '>'
+
+    '<'  shift, and go to state 18
+
+
+State 9
+
+    5 statement: togglePrint .
+
+    $default  reduce using rule 5 (statement)
+
+
+State 10
+
+   12 spokesman: speaking .
+   13          | speaking . sprite
+
+    '%'  shift, and go to state 19
+
+    $default  reduce using rule 12 (spokesman)
+
+    sprite  go to state 20
+
+
+State 11
+
+   16 speaking: SPEAKER INDEX .
+
+    $default  reduce using rule 16 (speaking)
+
+
+State 12
+
+    9 processInput: TEXT_INPUT .
+
+    $default  reduce using rule 9 (processInput)
+
+
+State 13
+
+    8 processInput: VAR_SET . INDEX
+   10             | VAR_SET . INDEX ':' dialogueText
+
+    INDEX  shift, and go to state 21
+
+
+State 14
+
+   11 processInput: VARI_SET . INDEX ':' INDEX
+
+    INDEX  shift, and go to state 22
+
+
+State 15
+
+    7 specialCommand: MARK_INPUT processInput . MARK_INPUT
+
+    MARK_INPUT  shift, and go to state 23
+
+
+State 16
+
+    0 $accept: file $end .
+
+    $default  accept
+
+
+State 17
+
+    2 file: file statement .
+
+    $default  reduce using rule 2 (file)
+
+
+State 18
+
+    6 speak: spokesman '<' . spokenText '>'
+
+    TEXT  shift, and go to state 24
+    '%'   shift, and go to state 25
+
+    spokenText       go to state 26
+    dialogueText     go to state 27
+    processVariable  go to state 28
+
+
+State 19
+
+   14 sprite: '%' . EMOTION ':' spokenText '%'
+
+    EMOTION  shift, and go to state 29
+
+
+State 20
+
+   13 spokesman: speaking sprite .
+
+    $default  reduce using rule 13 (spokesman)
+
+
+State 21
+
+    8 processInput: VAR_SET INDEX .
+   10             | VAR_SET INDEX . ':' dialogueText
+
+    ':'  shift, and go to state 30
+
+    $default  reduce using rule 8 (processInput)
+
+
+State 22
+
+   11 processInput: VARI_SET INDEX . ':' INDEX
+
+    ':'  shift, and go to state 31
+
+
+State 23
+
+    7 specialCommand: MARK_INPUT processInput MARK_INPUT .
+
+    $default  reduce using rule 7 (specialCommand)
+
+
+State 24
+
+   19 dialogueText: TEXT .
+
+    $default  reduce using rule 19 (dialogueText)
+
+
+State 25
+
+   21 processVariable: '%' . VAR_VALUE INDEX '%'
+
+    VAR_VALUE  shift, and go to state 32
+
+
+State 26
+
+    6 speak: spokesman '<' spokenText . '>'
+   18 spokenText: spokenText . dialogueText
+
+    TEXT  shift, and go to state 24
+    '>'   shift, and go to state 33
+    '%'   shift, and go to state 25
+
+    dialogueText     go to state 34
+    processVariable  go to state 28
+
+
+State 27
+
+   17 spokenText: dialogueText .
+
+    $default  reduce using rule 17 (spokenText)
+
+
+State 28
+
+   20 dialogueText: processVariable .
+
+    $default  reduce using rule 20 (dialogueText)
+
+
+State 29
+
+   14 sprite: '%' EMOTION . ':' spokenText '%'
+
+    ':'  shift, and go to state 35
+
+
+State 30
+
+   10 processInput: VAR_SET INDEX ':' . dialogueText
+
+    TEXT  shift, and go to state 24
+    '%'   shift, and go to state 25
+
+    dialogueText     go to state 36
+    processVariable  go to state 28
+
+
+State 31
+
+   11 processInput: VARI_SET INDEX ':' . INDEX
+
+    INDEX  shift, and go to state 37
+
+
+State 32
+
+   21 processVariable: '%' VAR_VALUE . INDEX '%'
+
+    INDEX  shift, and go to state 38
+
+
+State 33
+
+    6 speak: spokesman '<' spokenText '>' .
+
+    $default  reduce using rule 6 (speak)
+
+
+State 34
+
+   18 spokenText: spokenText dialogueText .
+
+    $default  reduce using rule 18 (spokenText)
+
+
+State 35
+
+   14 sprite: '%' EMOTION ':' . spokenText '%'
+
+    TEXT  shift, and go to state 24
+    '%'   shift, and go to state 25
+
+    spokenText       go to state 39
+    dialogueText     go to state 27
+    processVariable  go to state 28
+
+
+State 36
+
+   10 processInput: VAR_SET INDEX ':' dialogueText .
+
+    $default  reduce using rule 10 (processInput)
+
+
+State 37
+
+   11 processInput: VARI_SET INDEX ':' INDEX .
+
+    $default  reduce using rule 11 (processInput)
+
+
+State 38
+
+   21 processVariable: '%' VAR_VALUE INDEX . '%'
+
+    '%'  shift, and go to state 40
+
+
+State 39
+
+   14 sprite: '%' EMOTION ':' spokenText . '%'
+   18 spokenText: spokenText . dialogueText
+
+    TEXT  shift, and go to state 24
+    '%'   shift, and go to state 41
+
+    dialogueText     go to state 34
+    processVariable  go to state 28
+
+
+State 40
+
+   21 processVariable: '%' VAR_VALUE INDEX '%' .
+
+    $default  reduce using rule 21 (processVariable)
+
+
+State 41
+
+   14 sprite: '%' EMOTION ':' spokenText '%' .
+   21 processVariable: '%' . VAR_VALUE INDEX '%'
+
+    VAR_VALUE  shift, and go to state 32
+
+    $default  reduce using rule 14 (sprite)

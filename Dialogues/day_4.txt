@@ -1,0 +1,35 @@
+Car_3_<..........>
+Car_3_<It's over huh...?>
+Car_3_<.... just like that, your vacation is over>
+Car_3_<.....>
+Car_3_<Now I would say that this vacation has been a glorious success>
+Car_3_<You've completed every assignment very well...>
+Car_3_<Especially...>
+Car_3_<Acquiring your target...>
+Car_3_<..... %getVar_0_%...>
+Car_3_<It's... time...>
+Car_3_<... for you to start a very long vacation...>
+Car_3_<Farewell, %getVar0% ... enjoy your well deserved rest>
+Car_1_<Woah, woah woah...>
+Car_1_<It's just the vacation, not my life>
+Car_1_<Second of all...>
+Car_1_<Who even are you to tell me that?>
+Car_3_<Oh...>
+Car_3_<It would appear that the impact has successfully damaged your memory>
+Car_3_<Good... my time has come...>
+Car_1_<WHAT DO YOU MEAN BY 'GOOD'?>
+Car_1_<...... what a psycho...... I should really warn Crush about him?>
+Car_1_<...... ugh.....>
+Car_1_<...... My body feels even heavier than usual.....>
+Car_1_<...... but...... I.... must..... push....through.....>
+Car_0_<AAAAAAAAAAAAAAA>
+Car_1_<That voice... it sounded like....>
+Car_2_<Get away from me.... who are you??? I'm... calling the police>
+Car_3_<No need dearie, this place is built for only the most important two people in the world>
+Car_3_<You.... and me>
+Car_2_<Ewwwww>
+Car_1_<They sound in great distress>
+Car_1_<Screw the police, I'm doing this myself>
+Car_3_<Do what yourself?>
+~~input~~
+maxStat

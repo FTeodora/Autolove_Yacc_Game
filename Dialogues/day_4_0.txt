@@ -1,0 +1,12 @@
+Car_3_<What are you....?>
+Car_1_<Going home>
+Car_1_<Isn't it obvious?>
+Car_3_<You can't just go home while the villain is capturing you>
+Car_1_<How about I do anyway?>
+Car_1_<Crush?>
+Car_2_%drawSprite:neutral%:<??>
+Car_1_<Let's go home>
+Car_2_%drawSprite:neutral%:<....>
+Car_2_%drawSprite:happy%:<Sounds good to me>
+Car_1_<Good, let's go>
+Car_3_<WAIT, WHAT ARE YOU->

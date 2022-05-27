@@ -1,0 +1,42 @@
+Car_1_<...........>
+Car_1_<Well, that sure was a weird dream>
+Car_1_<Was that a manifestation of my health crying for help?>
+Car_1_<Welp, manifestation or not, it was right>
+Car_1_<I should probably get out from time to time>
+Car_1_<Maybe I could start by acquiring elements of proper nutrition>
+Car_1_<From no other than the establishing that hosts various mundane objects>
+Car_1_<Also known as the store from down the street>
+Car_3_<You leave your house for the store, excited for anything that might happen>
+Car_3_<Such a sunny day outside. Truely a sight to behold>
+Car_3_<Sun radiating at cancer-inducing levels, bird chirping causing noise pollution ...>
+Car_3_<If it weren't for a marvelous entity delighting your sight, this would've been an absolute regret>
+Car_0_%drawSprite:neutral%<........ oh ? ......>
+Car_3_<Oh no, the marvelous entity seems to have detected your fascination towards it>
+Car_3_<ABANDON MISSION! ABANDON MISSION!>
+Car_0_%drawSprite:neutral%<Wait, you look familiar...>
+Car_0_%drawSprite:neutral%<Aren't you ...>
+Car_0_%drawSprite:happy%<... %getVar_0_% from college?>
+Car_1_<.... uhhh .... yes>
+Car_1_<I am>
+Car_0_%drawSprite:happy%<Oooh. I knew it!>
+Car_0_%drawSprite:neutral%<Me? The name's Crush. Just doin' my morning walk. Glad to run into someone familiar>
+Car_2_%drawSprite:neutral%<Sorry if I'm awkward... I don't really get to go out and socialize>
+Car_2_%drawSprite:neutral%<Most of the time I just stay inside and do projects and stuff>
+Car_2_%drawSprite:sad%<The amount of works they ask us to do... feels like sacrificing your soul>
+Car_2_%drawSprite:sad%<It always takes me nights to even get passing grades>
+Car_2_%drawSprite:angry%<Although to be honest, sometimes I spend my nights on the weird side of Youtube>
+Car_2_%drawSprite:angry%<But really, can't a student get some rest... geez...>
+Car_1_<Indeed, energy regeneration holds great importance to human metabolism>
+Car_2_%drawSprite:happy%<Haha, should tell this to the professors>
+Car_2_%drawSprite:angry%<Tho' they will fly you out the college forever>
+Car_2_%drawSprite:neutral%<But hey, at least we can suffer together I guess>
+Car_1_<Correctly, fellow colleague. Let us unite in our fighting against suffering!>
+Car_2_%drawSprite:happy%<Hehehe, yeah, why don't we just hang out since we ran into each other?>
+Car_2_%drawSprite:happy%<I'm not really going anywhere. So anything recreative should be fun>
+Car_1_<Yeah, let us engage in the best activities!>
+Car_3_<Your initial objective gets swallowed by the oblivion of meeting someone... intriguing>
+Car_3_<But at least it's for a good cause>
+Car_3_<How shall you entertain yourselves?>
+~~input~~
+Car_2_%drawSprite:neutral%<Woah... that was...>
+maxStat

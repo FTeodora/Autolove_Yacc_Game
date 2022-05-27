@@ -1,0 +1,10 @@
+Car_2_%drawSprite:neutral%<... interesting!>
+Car_2_%drawSprite:neutral%<We kinda tried something from everything...>
+Car_2_%drawSprite:neutral%<It was sure a lot but..>
+Car_2_%drawSprite:neutral%<I didn't really felt overwhelmed as long as we were together>
+Car_2_%drawSprite:happy%<We should hang out more!>
+Car_2_%drawSprite:happy%<Maybe we can do something tomorrow as well>
+Car_2_%drawSprite:happy%<Good Night!>
+Car_3_<The marvelous entity seems to be retreating to its home>
+Car_3_<And you shall do that as well>
+Car_3_<You have achieved your objectives for today>
