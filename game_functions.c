@@ -190,8 +190,13 @@ void initDistances(){
     }*/
     
 }
+
+
+/*
+    DO NOT DELETE THE PRINTFS FROM THIS FUNCTION!!
+    for some reason it gives me an assertion failure when I delete them and I have absolutely no idea why
+*/
 void initNewGameState(){
-    metaInfo->shouldPrint=1;
     initNames();
     printf("1\n");
     initCharacter(0,"???\0",0,0,0,0);

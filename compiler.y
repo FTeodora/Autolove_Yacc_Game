@@ -47,7 +47,7 @@ file: statement
     ;
 statement: speak | specialCommand |togglePrint
 speak: spokesman '<' spokenText '>' { 
-    if(metaInfo->shouldPrint!=0){
+
     if(shouldDelete==1)
         system("clear");
     printf("%s: %s\n",currDialogue.speaker,$3); 
@@ -60,21 +60,18 @@ speak: spokesman '<' spokenText '>' {
             }
     }while(c=='s');
     shouldDelete=1;
-    }
 };
 specialCommand: MARK_INPUT processInput MARK_INPUT;
-processInput: VAR_SET INDEX {
-    if(metaInfo->shouldPrint!=0)
-        {
-            printf("Write your input: ");
+processInput: VAR_SET INDEX 
+{
+    printf("Write your input: ");
     do { 
         fgets(metaInfo->globals[$2],255,stdin); 
     } while(strlen(metaInfo->globals[$2])<3); 
     metaInfo->globals[$2][strlen(metaInfo->globals[$2])-1]='\0';
-        }
-    }                                                 
+        }                                                 
     | TEXT_INPUT {
-        if(metaInfo->shouldPrint!=0){
+        
         char buffer2[255];
         int res=0;
         //ok deci o problema. pentru ca o sa chem alt compilator care o sa fie un proces separat cu memoria lui separata,
@@ -106,20 +103,19 @@ processInput: VAR_SET INDEX {
        printf("You can't do anything anymore except for pressing a key to continue\n");
        getchar();
         }
-       };
     | VAR_SET INDEX ':' dialogueText{
         strcpy(metaInfo->globals[$2],$4);
     }
     |VARI_SET INDEX ':' INDEX{
         metaInfo->globalsi[$2]=$4;
-    }
+    };
 spokesman: speaking
         | speaking sprite;
-sprite: '%' EMOTION ':' spokenText '%'{
+sprite: '%' EMOTION ':' spokenText '%'
+{
     system("clear");
     shouldDelete=0;
-    if(metaInfo->shouldPrint)
-        drawArt($4);
+    drawArt($4);
 }
 togglePrint: MAX_STAT{
     branch=1;

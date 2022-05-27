@@ -44,21 +44,22 @@
 command:
         | action
         | question {wasQuestion=0;};
-action: RELOCATE PLACE{
-    wasQuestion=1;
-    goToPlace($2);
-    }       
-    | DISCUSS TOPIC{
-    wasQuestion=2;
-    discussTopic($2);
-    }
-    | DISCUSS GAME{
-    wasQuestion=2;
-    discussTopic("game");
-    }
-    | DO randomText{
-    wasQuestion=3;
-    executeAction($2);   
+action: RELOCATE PLACE
+    {
+        wasQuestion=1;
+        goToPlace($2);}       
+    | DISCUSS TOPIC
+    {
+        wasQuestion=2;
+        discussTopic($2);}
+    | DISCUSS GAME
+    {
+        wasQuestion=2;
+        discussTopic("game");}
+    | DO randomText
+    {
+        wasQuestion=3;
+        executeAction($2);   
     };
 question: ASK OPTION { int u=identifyWord($2,metaInfo->optionsNames,MAX_OPTIONS); printOptions(u); }
         | CHECK TEXT{ };

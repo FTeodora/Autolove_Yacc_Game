@@ -9,7 +9,7 @@ Car_3_<You leave your house, in search of a verdict for your mood>
 Car_2_%drawSprite:neutral%<Oh....>
 Car_3_<It's...>
 Car_2_%drawSprite:happy%<Hello!>
-Car_3_<Mood verdict: Positive>
+Car_3_<Mood verdict, Positive>
 Car_2_%drawSprite:neutral%<Sorry for my reaction, it's just...>
 Car_2_%drawSprite:neutral%<I almost feel like it's the exact hour that when I saw you yesterday...>
 Car_1_<Well, my refreshing schedule is indeed meticulously programmed>

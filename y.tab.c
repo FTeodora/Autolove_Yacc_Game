@@ -554,9 +554,9 @@ static const yytype_int8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    45,    45,    46,    48,    48,    48,    49,    65,    66,
-      76,   110,   113,   116,   117,   118,   124,   128,   129,   130,
-     131,   132,   133
+       0,    45,    45,    46,    48,    48,    48,    49,    64,    65,
+      73,   106,   109,   112,   113,   114,   120,   124,   125,   126,
+     127,   128,   129
 };
 #endif
 
@@ -1371,7 +1371,7 @@ yyreduce:
     {
   case 7:
                                     { 
-    if(metaInfo->shouldPrint!=0){
+
     if(shouldDelete==1)
         system("clear");
     printf("%s: %s\n",currDialogue.speaker,(yyvsp[-1].s)); 
@@ -1384,26 +1384,22 @@ yyreduce:
             }
     }while(c=='s');
     shouldDelete=1;
-    }
 }
     break;
 
   case 9:
-                            {
-    if(metaInfo->shouldPrint!=0)
-        {
-            printf("Write your input: ");
+{
+    printf("Write your input: ");
     do { 
         fgets(metaInfo->globals[(yyvsp[0].nr)],255,stdin); 
     } while(strlen(metaInfo->globals[(yyvsp[0].nr)])<3); 
     metaInfo->globals[(yyvsp[0].nr)][strlen(metaInfo->globals[(yyvsp[0].nr)])-1]='\0';
         }
-    }
     break;
 
   case 10:
                  {
-        if(metaInfo->shouldPrint!=0){
+        
         char buffer2[255];
         int res=0;
         //ok deci o problema. pentru ca o sa chem alt compilator care o sa fie un proces separat cu memoria lui separata,
@@ -1435,7 +1431,6 @@ yyreduce:
        printf("You can't do anything anymore except for pressing a key to continue\n");
        getchar();
         }
-       }
     break;
 
   case 11:
@@ -1451,11 +1446,10 @@ yyreduce:
     break;
 
   case 15:
-                                      {
+{
     system("clear");
     shouldDelete=0;
-    if(metaInfo->shouldPrint)
-        drawArt((yyvsp[-1].s));
+    drawArt((yyvsp[-1].s));
 }
     break;
 
